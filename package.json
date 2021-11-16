@@ -1,6 +1,6 @@
 {
   "name": "dawn-interfaces",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dawn application interfaces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,9 +11,7 @@
     "go": "node ./nodeEditor.js && tsc && git add . && git commit -m 'update' && npm publish",
     "go-tri": "npm run go && cd .. && cd app && yarn add dawn-interfaces && cd .. && cd service && npm i dawn-interfaces && cd .. && cd gwi"
   },
-  "keywords": [
-    "dawn"
-  ],
+  "keywords": [ "dawn" ],
   "author": "Tom Scanlan",
   "license": "MIT",
   "devDependencies": {
