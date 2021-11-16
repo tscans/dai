@@ -1,0 +1,32 @@
+{
+  "name": "dawn-interfaces",
+  "version": "1.0.0",
+  "description": "Dawn application interfaces",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "",
+    "prepublish": "npm test",
+    "go": "node ./nodeEditor.js && tsc && git add . && git commit -m 'update' && npm publish",
+    "go-tri": "npm run go && cd .. && cd app && yarn add dawn-interfaces && cd .. && cd service && npm i dawn-interfaces && cd .. && cd gwi"
+  },
+  "keywords": [
+    "dawn"
+  ],
+  "author": "Tom Scanlan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^22.1.4",
+    "@types/node": "^9.6.61",
+    "jest": "^22.4.2",
+    "ts-jest": "^22.4.1",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.9",
+    "express": "^4.17.1",
+    "json-beautify": "^1.1.1",
+    "uuid": "^3.2.1"
+  }
+}
