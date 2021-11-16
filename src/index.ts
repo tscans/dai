@@ -1,4 +1,4 @@
-export interface ISRWeather {
+export interface ISRListing {
     privateRemarks: string;
     property: ISRProperty;
     mlsId: number;
