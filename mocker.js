@@ -19,7 +19,7 @@ const mocker = async () =>{
         return u.substring(0,brace1).replace(/[" "]/g, "");
     });
     const generations = interfaceNames.map(interf=>
-        `export const Mock${interf} = ${JSON.stringify(
+        `module.exports.Mock${interf} = ${JSON.stringify(
             generator.generate(interf,{
                 includeAllProps:true,
                 primitiveValues:{
