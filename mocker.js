@@ -19,7 +19,7 @@ const mocker = async () =>{
         return u.substring(0,brace1).replace(/[" "]/g, "");
     });
     const generations = interfaceNames.map(interf=>
-        `module.exports.Mock${interf} = ${JSON.stringify(
+        `export const Mock${interf} = ${JSON.stringify(
             generator.generate(interf,{
                 includeAllProps:true,
                 primitiveValues:{
@@ -29,9 +29,13 @@ const mocker = async () =>{
                 maxRecursiveLoop:3
             })
         )}`
-    ).join("\n");
+    ).join("\n") ;
     
-    fs.writeFileSync("./src/mocks/index.ts",generations);
+    const exportAll = `\n export default {${interfaceNames.map(ifn=>
+        `Mock${ifn}`
+    ).join(",")}}`;
+
+    fs.writeFileSync("./src/mocks/index.ts",generations + exportAll);
     console.log("Done Mocking.")
 }
 

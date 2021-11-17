@@ -1,3 +1,6 @@
+import Mocks from './mocks/index';
+
+export const AllMocks = Mocks;
 export interface ISRListing {
     privateRemarks: string;
     property: ISRProperty;
