@@ -56,7 +56,7 @@ export const filtersBedRangeExchange = {
     "2+":2,
     "3+":3,
     "4+":4,
-    "5+":5
+    "5+":999
 }
 
 export const filtersBedRangeValues = Object.keys(filtersBedRangeExchange);
@@ -67,12 +67,13 @@ export const filtersBathRangeExchange = {
     "2+":2,
     "3+":3,
     "4+":4,
-    "5+":5
+    "5+":999
 }
 
 export const filtersBathRangeValues = Object.keys(filtersBathRangeExchange);
 
 export const filtersPropertyTypeExchange = {
+    "All":null,
     "Residential": "residential",
     "Condominium": "condominium",
     "Multifamily": "multifamily",
@@ -86,6 +87,7 @@ export const filtersPropertyTypeExchange = {
 export const filtersPropertyTypeValues = Object.keys(filtersPropertyTypeExchange);
 
 export const filtersHomeStatusExchange = {
+    "All":null,
     "Active": "Active",
     "Pending": "Pending",
     "Closed": "Closed",
