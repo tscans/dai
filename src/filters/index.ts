@@ -114,9 +114,7 @@ export interface IMlsFilters{
     priceRangeStart:keyof typeof filtersPriceRangeValues;
     priceRangeEnd:keyof typeof filtersPriceRangeValues;
     bedroomRangeStart:keyof typeof filtersBedRangeValues;
-    bedroomRangeEnd:keyof typeof filtersBedRangeValues;
     bathroomRangeStart:keyof typeof filtersBathRangeValues;
-    bathroomRangeEnd:keyof typeof filtersBathRangeValues;
     propertyType:keyof typeof filtersPropertyTypeValues;
     houseSqftStart:number | null;
     houseSqftEnd:number | null;
