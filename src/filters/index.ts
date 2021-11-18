@@ -117,9 +117,9 @@ export interface IMlsFilters{
     bathroomRangeStart:keyof typeof filtersBathRangeValues;
     bathroomRangeEnd:keyof typeof filtersBathRangeValues;
     propertyType:keyof typeof filtersPropertyTypeValues;
-    houseSqftStart:number;
-    houseSqftEnd:number;
-    yearBuiltStart:number;
-    yearBuiltEnd:number;
+    houseSqftStart:number | null;
+    houseSqftEnd:number | null;
+    yearBuiltStart:number | null;
+    yearBuiltEnd:number | null;
     homeStatus:keyof typeof filtersHomeStatusValues;
 }
