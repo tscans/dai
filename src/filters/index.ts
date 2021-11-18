@@ -1,3 +1,9 @@
+export const lookupGenerator = (arr:string[]) =>{
+    return arr.reduce((obj,str)=>{
+        obj[str] = str;
+    },{} as any);
+}
+
 export const filtersPriceRangeExchange = {
     "No Min":0,
     "$10k":10000,
@@ -49,6 +55,7 @@ export const filtersPriceRangeExchange = {
 };
 
 export const filtersPriceRangeValues = Object.keys(filtersPriceRangeExchange);
+export const filtersPriceRangeLookup = lookupGenerator(filtersPriceRangeValues);
 
 export const filtersBedRangeExchange = {
     "No Min":0,
@@ -60,6 +67,7 @@ export const filtersBedRangeExchange = {
 }
 
 export const filtersBedRangeValues = Object.keys(filtersBedRangeExchange);
+export const filtersBedRangeLookup = lookupGenerator(filtersBedRangeValues);
 
 export const filtersBathRangeExchange = {
     "No Min":0,
@@ -71,6 +79,7 @@ export const filtersBathRangeExchange = {
 }
 
 export const filtersBathRangeValues = Object.keys(filtersBathRangeExchange);
+export const filtersBathRangeLookup = lookupGenerator(filtersBathRangeValues);
 
 export const filtersPropertyTypeExchange = {
     "All":null,
@@ -85,6 +94,7 @@ export const filtersPropertyTypeExchange = {
 }
 
 export const filtersPropertyTypeValues = Object.keys(filtersPropertyTypeExchange);
+export const filtersPropertyTypeLookup = lookupGenerator(filtersPropertyTypeValues);
 
 export const filtersHomeStatusExchange = {
     "All":null,
@@ -97,6 +107,7 @@ export const filtersHomeStatusExchange = {
 }
 
 export const filtersHomeStatusValues = Object.keys(filtersHomeStatusExchange);
+export const filtersHomeStatusLookup = lookupGenerator(filtersHomeStatusValues);
 
 export interface IMlsFilters{
     priceRangeStart:keyof typeof filtersPriceRangeValues;
