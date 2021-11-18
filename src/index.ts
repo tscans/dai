@@ -1,4 +1,5 @@
 import Mocks from './mocks/index';
+import "./filters";
 
 export const AllMocks = Mocks;
 export interface ISRListing {
