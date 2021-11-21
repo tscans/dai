@@ -122,3 +122,10 @@ export interface IMlsFilters{
     yearBuiltEnd:number | null;
     homeStatus:keyof typeof filtersHomeStatusValues;
 }
+
+export interface IMlsFiltersSaved extends IMlsFilters{
+    id:string;
+    createdAt:string;
+    filterName:string;
+    createdBy:string;
+}
