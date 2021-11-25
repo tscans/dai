@@ -175,3 +175,11 @@ export interface ISRAssociation {
     amenities: string;
 }
   
+export interface IUserProfile{
+    id:string;
+    firstName:string; 
+    lastName:string;
+    createdAt: number;
+    email:string;
+    profilePictureThumbnail:string;
+}

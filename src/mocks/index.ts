@@ -13,4 +13,5 @@ export const MockISRGeo = {"county":"string","lat":987654,"lng":987654,"marketAr
 export const MockISRTax = {"taxYear":987654,"taxAnnualAmount":987654,"id":"string"}
 export const MockISRSales = {"closeDate":"string","office":{"contact":{"email":"string","office":"string","cell":"string"},"name":"string","servingName":"string","brokerid":"string"},"closePrice":987654,"agent":{"lastName":"string","contact":{"email":"string","office":"string","cell":"string"},"firstName":"string","id":"string"},"contractDate":"string"}
 export const MockISRAssociation = {"fee":987654,"frequency":"string","name":"string","amenities":"string"}
- export default {Mock,MockISRListing,MockISRProperty,MockISRParking,MockISRRoomsEntity,MockISROffice,MockISRContact,MockISRAddress,MockISRAgentOrCoAgent,MockISRSchool,MockISRMls,MockISRGeo,MockISRTax,MockISRSales,MockISRAssociation}
+export const MockIUserProfile = {"id":"string","firstName":"string","lastName":"string","createdAt":987654,"email":"string","profilePictureThumbnail":"string"}
+ export default {Mock,MockISRListing,MockISRProperty,MockISRParking,MockISRRoomsEntity,MockISROffice,MockISRContact,MockISRAddress,MockISRAgentOrCoAgent,MockISRSchool,MockISRMls,MockISRGeo,MockISRTax,MockISRSales,MockISRAssociation,MockIUserProfile}
