@@ -181,5 +181,5 @@ export interface IUserProfile{
     lastName:string;
     createdAt: number;
     email:string;
-    profilePictureThumbnail:string;
+    profilePictureThumbnail:string | null;
 }
