@@ -213,4 +213,3 @@ export interface IHereCategoriesEntity {
     name: string;
     primary: boolean;
 }
-  

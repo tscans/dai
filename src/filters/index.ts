@@ -129,3 +129,10 @@ export interface IMlsFiltersSaved extends IMlsFilters{
     filterName:string;
     createdBy:string;
 }
+
+export interface IMlsMapRegion{
+    latitude: number;
+    longitude: number;
+    latitudeDelta: number;
+    longitudeDelta: number;
+}
