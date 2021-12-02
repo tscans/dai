@@ -14,8 +14,8 @@ export const MockISRTax = {"taxYear":987654,"taxAnnualAmount":987654,"id":"strin
 export const MockISRSales = {"closeDate":"string","office":{"contact":{"email":"string","office":"string","cell":"string"},"name":"string","servingName":"string","brokerid":"string"},"closePrice":987654,"agent":{"lastName":"string","contact":{"email":"string","office":"string","cell":"string"},"firstName":"string","id":"string"},"contractDate":"string"}
 export const MockISRAssociation = {"fee":987654,"frequency":"string","name":"string","amenities":"string"}
 export const MockIUserProfile = {"id":"string","firstName":"string","lastName":"string","createdAt":987654,"email":"string","profilePictureThumbnail":"string"}
-export const MockIHereSearchSuggestion = {"title":"string","id":"string","resultType":"string","address":{"label":"string"},"position":{"lat":987654,"lng":987654},"access":[{"lat":987654,"lng":987654}],"distance":987654,"categories":[{"id":"string","name":"string","primary":true}]}
-export const MockIHereAddress = {"label":"string"}
+export const MockIHereSearchSuggestion = {"title":"string","id":"string","resultType":"string","address":{"label":"string","countryCode":"string","countryName":"string","stateCode":"string","state":"string","county":"string","city":"string","postalCode":"string"},"position":{"lat":987654,"lng":987654},"access":[{"lat":987654,"lng":987654}],"distance":987654,"categories":[{"id":"string","name":"string","primary":true}]}
+export const MockIHereAddress = {"label":"string","countryCode":"string","countryName":"string","stateCode":"string","state":"string","county":"string","city":"string","postalCode":"string"}
 export const MockIHereAccessEntityOrPosition = {"lat":987654,"lng":987654}
 export const MockIHereCategoriesEntity = {"id":"string","name":"string","primary":true}
  export default {Mock,MockISRListing,MockISRProperty,MockISRParking,MockISRRoomsEntity,MockISROffice,MockISRContact,MockISRAddress,MockISRAgentOrCoAgent,MockISRSchool,MockISRMls,MockISRGeo,MockISRTax,MockISRSales,MockISRAssociation,MockIUserProfile,MockIHereSearchSuggestion,MockIHereAddress,MockIHereAccessEntityOrPosition,MockIHereCategoriesEntity}

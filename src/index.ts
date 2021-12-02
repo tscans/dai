@@ -196,6 +196,13 @@ export interface IHereSearchSuggestion {
 }
 export interface IHereAddress {
     label: string;
+    countryCode: string;
+    countryName: string;
+    stateCode: string;
+    state: string;
+    county: string;
+    city: string;
+    postalCode: string;
 }
 export interface IHereAccessEntityOrPosition {
     lat: number;
