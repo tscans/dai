@@ -213,3 +213,13 @@ export interface IHereCategoriesEntity {
     name: string;
     primary: boolean;
 }
+
+export interface IUserSavedListings{
+    id:string;
+    createdAt:string;
+    sretsMlsId:string;
+    savedVersion: string;
+    sretsMeta:ISRListing;
+    rank:number;
+    lastUpdatedSrets:string;
+}
