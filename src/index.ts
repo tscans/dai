@@ -219,7 +219,7 @@ export enum EUserSavedListingRating{
     love = "Love"
 }
 
-export interface IUserSavedListings{
+export interface IUserSavedListing{
     id:string;
     createdAt:string;
     sretsMlsId:string;
