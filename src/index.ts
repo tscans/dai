@@ -214,6 +214,11 @@ export interface IHereCategoriesEntity {
     primary: boolean;
 }
 
+export enum EUserSavedListingRating{
+    like = "Like",
+    love = "Love"
+}
+
 export interface IUserSavedListings{
     id:string;
     createdAt:string;
@@ -222,4 +227,5 @@ export interface IUserSavedListings{
     sretsMeta:ISRListing;
     rank:number;
     lastUpdatedSrets:string;
+    userRating: EUserSavedListingRating;
 }
