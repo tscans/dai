@@ -223,7 +223,7 @@ export enum EUserSavedListingRating{
 export interface IUserSavedListing{
     id:string;
     createdAt:string;
-    sretsMlsId:string;
+    sretsMlsId:number;
     savedVersion: string;
     sretsMeta:ISRListing;
     lastUpdatedSrets:string;
