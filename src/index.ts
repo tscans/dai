@@ -182,6 +182,7 @@ export interface IUserProfile{
     createdAt: number;
     email:string;
     profilePictureThumbnail:string | null;
+    userSavedListIds:string[];
 }
 
 export interface IHereSearchSuggestion {
@@ -225,7 +226,6 @@ export interface IUserSavedListing{
     sretsMlsId:string;
     savedVersion: string;
     sretsMeta:ISRListing;
-    rank:number;
     lastUpdatedSrets:string;
     userRating: EUserSavedListingRating;
 }
