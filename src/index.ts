@@ -225,7 +225,6 @@ export interface IUserSavedListing{
     createdAt:string;
     sretsMlsId:number;
     savedVersion: string;
-    sretsMeta:ISRListing;
     lastUpdatedSrets:string;
     userRating: EUserSavedListingRating;
 }
