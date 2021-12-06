@@ -227,4 +227,5 @@ export interface IUserSavedListing{
     savedVersion: string;
     lastUpdatedSrets:string;
     userRating: EUserSavedListingRating;
+    createdBy:string;
 }

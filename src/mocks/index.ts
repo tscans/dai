@@ -18,5 +18,5 @@ export const MockIHereSearchSuggestion = {"title":"string","id":"string","result
 export const MockIHereAddress = {"label":"string","countryCode":"string","countryName":"string","stateCode":"string","state":"string","county":"string","city":"string","postalCode":"string"}
 export const MockIHereAccessEntityOrPosition = {"lat":987654,"lng":987654}
 export const MockIHereCategoriesEntity = {"id":"string","name":"string","primary":true}
-export const MockIUserSavedListing = {"id":"string","createdAt":"string","sretsMlsId":987654,"savedVersion":"string","lastUpdatedSrets":"string","userRating":"like = \"Like\""}
+export const MockIUserSavedListing = {"id":"string","createdAt":"string","sretsMlsId":987654,"savedVersion":"string","lastUpdatedSrets":"string","userRating":"like = \"Like\"","createdBy":"string"}
  export default {Mock,MockISRListing,MockISRProperty,MockISRParking,MockISRRoomsEntity,MockISROffice,MockISRContact,MockISRAddress,MockISRAgentOrCoAgent,MockISRSchool,MockISRMls,MockISRGeo,MockISRTax,MockISRSales,MockISRAssociation,MockIUserProfile,MockIHereSearchSuggestion,MockIHereAddress,MockIHereAccessEntityOrPosition,MockIHereCategoriesEntity,MockIUserSavedListing}
