@@ -201,6 +201,7 @@ export interface IHereAddress {
     countryName: string;
     stateCode: string;
     state: string;
+    district:string;
     county: string;
     city: string;
     postalCode: string;
