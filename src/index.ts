@@ -224,7 +224,7 @@ export enum EUserSavedListingRating{
 export interface IUserSavedListing{
     id:string;
     createdAt:string;
-    sretsMlsId:number;
+    mlsListingId:string;
     savedVersion: string;
     lastUpdatedSrets:string;
     userRating: EUserSavedListingRating;
