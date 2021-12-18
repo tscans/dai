@@ -1,3 +1,13 @@
+export interface IYoutubeMediaSave {
+    id:string;
+    createdAt:string;
+    publishedAt:string;
+    title:string;
+    description:string;
+    thumbnailUrl:string;
+    videoId:string;
+}
+
 export interface IYoutubeRoot {
     kind: string
     etag: string
