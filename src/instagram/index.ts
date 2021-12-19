@@ -1,3 +1,13 @@
+export interface IInstagramMediaSave{
+    datePosted:number;
+    content:string;
+    mediaId:string;
+    posterId:string;
+    displayUrl:string;
+    thumbnail:string;
+    likeCount:string;
+}
+
 export interface IInstagramRoot {
     total: number
     medias: IInstagramMedia[]
