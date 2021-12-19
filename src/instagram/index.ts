@@ -1,5 +1,11 @@
 export interface IInstagramMediaSave{
-
+    datePostedSeconds:number;
+    content:string;
+    id:string;
+    userNamePoster:string;
+    fullNamePoster:string;
+    profilePicPoster:string;
+    displayUrls:string[];
 }
 
 export interface IInstagramRoot {
