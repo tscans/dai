@@ -2,6 +2,7 @@ import Mocks from './mocks/index';
 
 export * from './filters';
 export * from './youtube';
+export * from './instagram';
 
 export const AllMocks = Mocks;
 export interface ISRListing {
