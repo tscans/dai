@@ -19,6 +19,7 @@ export interface IInstagramRoot {
     lat: number
     lng: number
     user: IInstagramUser2
+    image_versions2: IInstagramImageVersions2
     can_viewer_reshare: boolean
     caption_is_edited: boolean
     like_and_view_counts_disabled: boolean
