@@ -13,7 +13,7 @@ export const MockISRGeo = {"county":"string","lat":987654,"lng":987654,"marketAr
 export const MockISRTax = {"taxYear":987654,"taxAnnualAmount":987654,"id":"string"}
 export const MockISRSales = {"closeDate":"string","office":{"contact":{"email":"string","office":"string","cell":"string"},"name":"string","servingName":"string","brokerid":"string"},"closePrice":987654,"agent":{"lastName":"string","contact":{"email":"string","office":"string","cell":"string"},"firstName":"string","id":"string"},"contractDate":"string"}
 export const MockISRAssociation = {"fee":987654,"frequency":"string","name":"string","amenities":"string"}
-export const MockIUserProfile = {"id":"string","firstName":"string","lastName":"string","createdAt":987654,"email":"string","profilePictureThumbnail":"string","userSavedListIds":["MOCK"]}
+export const MockIUserProfile = {"id":"string","firstName":"string","lastName":"string","createdAt":987654,"email":"string","profilePictureThumbnail":"string","userSavedListIds":["MOCK"],"userType":"client = \"client\""}
 export const MockIHereSearchSuggestion = {"title":"string","id":"string","resultType":"string","address":{"label":"string","countryCode":"string","countryName":"string","stateCode":"string","state":"string","district":"string","county":"string","city":"string","postalCode":"string"},"position":{"lat":987654,"lng":987654},"access":[{"lat":987654,"lng":987654}],"distance":987654,"categories":[{"id":"string","name":"string","primary":true}]}
 export const MockIHereAddress = {"label":"string","countryCode":"string","countryName":"string","stateCode":"string","state":"string","district":"string","county":"string","city":"string","postalCode":"string"}
 export const MockIHereAccessEntityOrPosition = {"lat":987654,"lng":987654}

@@ -176,6 +176,12 @@ export interface ISRAssociation {
     name: string;
     amenities: string;
 }
+
+export enum EUserType{
+    client = "client",
+    agent = "agent",
+    super = "super"
+}
   
 export interface IUserProfile{
     id:string;
@@ -185,6 +191,7 @@ export interface IUserProfile{
     email:string;
     profilePictureThumbnail:string | null;
     userSavedListIds:string[];
+    userType:EUserType;
 }
 
 export interface IHereSearchSuggestion {
