@@ -23,6 +23,7 @@ export interface IUserProfile{
     profilePictureThumbnail:string | null;
     userSavedListIds:string[];
     userType:EUserType;
+    phoneNumber?:string | null;
 }
 
 export enum EUserSavedListingRating{
