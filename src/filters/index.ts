@@ -5,6 +5,16 @@ export const lookupGenerator = (arr:string[]) =>{
     },{} as any);
 }
 
+export const filtersPreferenceBuyingUrgencyExchange = {
+    "Distant Plans":0,
+    "Within the Next Year":1,
+    "Within the Next Few Months":2,
+    "Urgent":3
+}
+
+export const filtersPreferenceBuyingUrgencyValues = Object.keys(filtersPreferenceBuyingUrgencyExchange);
+export const filtersPreferenceBuyingUrgencyLookup = lookupGenerator(filtersPreferenceBuyingUrgencyValues);
+
 export const filtersPriceRangeExchange = {
     "No Min":0,
     "$10k":10000,

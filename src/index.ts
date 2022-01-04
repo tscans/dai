@@ -1,4 +1,6 @@
 import Mocks from './mocks/index';
+import {filtersPriceRangeValues,filtersBedRangeValues,filtersBathRangeValues,
+    filtersPreferenceBuyingUrgencyValues} from './filters';
 
 export * from './filters';
 export * from './youtube';
@@ -26,6 +28,13 @@ export interface IUserProfile{
     phoneNumber?:string | null;
     agentUserAgencyId?:string | null;
     assignedAgentUserId?:string | null;
+    description:string;
+    agentAcceptedClient:boolean;
+    preferredPriceRangeStart?:keyof typeof filtersPriceRangeValues;
+    preferredPriceRangeEnd?:keyof typeof filtersPriceRangeValues;
+    preferredBedroomRangeStart?:keyof typeof filtersBedRangeValues;
+    preferredBathroomRangeStart?:keyof typeof filtersBathRangeValues;
+    preferredBuyingUrgency?:keyof typeof filtersPreferenceBuyingUrgencyValues
 }
 
 export enum EUserSavedListingRating{
