@@ -8,6 +8,7 @@ export interface ICommonNotification{
     popOpenNotificationText:string | null | undefined;
     customNotificationImageUrl:string | null | undefined;
     notificationSentById:string;
+    notificationActivityHasBeenUsed:boolean;
 }
 
 export enum ENotificationType{
