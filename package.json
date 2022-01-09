@@ -1,6 +1,6 @@
 {
   "name": "dawn-interfaces",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "description": "Dawn application interfaces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

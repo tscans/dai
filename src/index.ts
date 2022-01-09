@@ -7,6 +7,7 @@ export * from './youtube';
 export * from './instagram';
 export * from './srets';
 export * from './here';
+export * from './notifications';
 
 export const AllMocks = Mocks;
 
