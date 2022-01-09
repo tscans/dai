@@ -5,6 +5,7 @@ export interface ICommonNotification{
     hasBeenRead:boolean;
     notificationType:ENotificationType;
     notificationText:string;
+    popOpenNotificationText:string | null | undefined;
     customNotificationImageUrl:string | null | undefined;
     notificationSentById:string;
 }
