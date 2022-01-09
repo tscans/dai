@@ -16,6 +16,12 @@ export enum EUserType{
     agent = "agent",
     super = "super"
 }
+
+export enum EClientAgentConnectionStatus {
+    noConnection = "noConnection",
+    pendingConnection = "pendingConnection",
+    isConnected = "isConnected"
+}
   
 export interface IUserProfile{
     id:string;
@@ -30,7 +36,7 @@ export interface IUserProfile{
     agentUserAgencyId?:string | null;
     assignedAgentUserId?:string | null;
     description:string;
-    agentAcceptedClient:boolean;
+    clientAgentConnectionStatus:EClientAgentConnectionStatus;
     preferredPriceRangeStart?:keyof typeof filtersPriceRangeValues;
     preferredPriceRangeEnd?:keyof typeof filtersPriceRangeValues;
     preferredBedroomRangeStart?:keyof typeof filtersBedRangeValues;
