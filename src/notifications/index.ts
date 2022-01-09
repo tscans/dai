@@ -6,10 +6,12 @@ export interface ICommonNotification{
     notificationType:ENotificationType;
     notificationText:string;
     customNotificationImageUrl:string | null | undefined;
-    notificationSentBy:string;
+    notificationSentById:string;
 }
 
 export enum ENotificationType{
     clientListReorder = "clientListReorder",
-    clientRequestingAgent = "clientRequestingAgent"
+    clientRequestingAgentConnection = "clientRequestingAgentConnection",
+    agentAcceptsClientConnection = "agentAcceptsClientConnection",
+    agentRejectsClientConnection = "agentRejectsClientConnection" 
 }
