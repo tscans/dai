@@ -37,6 +37,8 @@ export interface IUserProfile{
     assignedAgentUserId?:string | null;
     description:string;
     clientAgentConnectionStatus:EClientAgentConnectionStatus;
+    tagline?:string;
+    userPrimaryZipCode?:string;
     preferredPriceRangeStart?:keyof typeof filtersPriceRangeValues;
     preferredPriceRangeEnd?:keyof typeof filtersPriceRangeValues;
     preferredBedroomRangeStart?:keyof typeof filtersBedRangeValues;
