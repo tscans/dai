@@ -22,6 +22,12 @@ export enum EClientAgentConnectionStatus {
     pendingConnection = "pendingConnection",
     isConnected = "isConnected"
 }
+
+export enum EAgentsClientTypeRequest{
+    myClients = "myClients",
+    agencyClients = "agencyClients",
+    unassignedClients = "unassignedClients"
+}
   
 export interface IUserProfile{
     id:string;
