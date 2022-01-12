@@ -15,5 +15,6 @@ export enum ENotificationType{
     clientListReorder = "clientListReorder",
     clientRequestingAgentConnection = "clientRequestingAgentConnection",
     agentAcceptsClientConnection = "agentAcceptsClientConnection",
-    agentRejectsClientConnection = "agentRejectsClientConnection" 
+    agentRejectsClientConnection = "agentRejectsClientConnection",
+    clientRemovesAgent = "clientRemovesAgent"
 }
