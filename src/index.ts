@@ -72,7 +72,7 @@ export interface IAgentSuggestedListing{
     createdAt:string;
     initialMessage:string;
     mlsListingId:string;
-    agendId:string;
+    agentId:string;
     clientId:string;
 }
 
