@@ -70,6 +70,7 @@ export interface IUserSavedListing{
 export interface IAgentSuggestedListing{
     id:string;
     createdAt:string;
+    initialMessage:string;
     mlsListingId:string;
     agendId:string;
     clientId:string;
