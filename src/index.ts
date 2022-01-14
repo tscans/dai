@@ -67,6 +67,14 @@ export interface IUserSavedListing{
     createdBy:string;
 }
 
+export interface IAgentSuggestedListing{
+    id:string;
+    createdAt:string;
+    mlsListingId:string;
+    agendId:string;
+    clientId:string;
+}
+
 export interface IAgentSignUpCodes{
     id:string;
     createdAt:string;
