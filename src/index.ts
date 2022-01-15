@@ -1,6 +1,7 @@
 import Mocks from './mocks/index';
 import {filtersPriceRangeValues,filtersBedRangeValues,filtersBathRangeValues,
     filtersPreferenceBuyingUrgencyValues} from './filters';
+import { ISRListing } from './srets';
 
 export * from './filters';
 export * from './youtube';
@@ -74,6 +75,10 @@ export interface IAgentSuggestedListing{
     mlsListingId:string;
     agentId:string;
     clientId:string;
+}
+
+export interface IAgentSuggestedListingViaMls extends IAgentSuggestedListing{
+    mlsListingData:ISRListing;
 }
 
 export interface IAgentSignUpCodes{
