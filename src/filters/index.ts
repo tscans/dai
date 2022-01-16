@@ -162,5 +162,5 @@ export const sortingHousingExchange = {
     "Baths Low-High":"-baths"
 }
 
-export const sortingHousingValues = Object.keys(filtersBathRangeExchange);
-export const sortingHousingLookup = lookupGenerator(filtersBathRangeValues);
+export const sortingHousingValues = Object.keys(sortingHousingExchange);
+export const sortingHousingLookup = lookupGenerator(sortingHousingValues);
