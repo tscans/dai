@@ -131,6 +131,7 @@ export interface IMlsFilters{
     yearBuiltStart:number | null;
     yearBuiltEnd:number | null;
     homeStatus:keyof typeof filtersHomeStatusValues;
+    houseSort: keyof typeof sortingHousingValues;
 }
 
 export interface IMlsFiltersSaved extends IMlsFilters{
@@ -146,3 +147,20 @@ export interface IMlsMapRegion{
     latitudeDelta: number;
     longitudeDelta: number;
 }
+
+export const sortingHousingExchange = {
+    "None":null,
+    "Price High-Low":"listprice",
+    "Price Low-High":"-listprice",
+    "List Date High-Low":"listdate",
+    "List Date Low-High":"-listdate",
+    "Close Date High-Low":"closedate",
+    "Close Date Low-High":"-closedate",
+    "Beds High-Low":"beds",
+    "Beds Low-High":"-beds",
+    "Baths High-Low":"baths",
+    "Baths Low-High":"-baths"
+}
+
+export const sortingHousingValues = Object.keys(filtersBathRangeExchange);
+export const sortingHousingLookup = lookupGenerator(filtersBathRangeValues);
