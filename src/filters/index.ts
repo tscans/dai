@@ -150,16 +150,14 @@ export interface IMlsMapRegion{
 
 export const sortingHousingExchange = {
     "None":null,
-    "Price High-Low":"listprice",
-    "Price Low-High":"-listprice",
+    "Price High-Low":"-listprice",
+    "Price Low-High":"listprice",
     "List Date High-Low":"listdate",
     "List Date Low-High":"-listdate",
-    "Close Date High-Low":"closedate",
-    "Close Date Low-High":"-closedate",
-    "Beds High-Low":"beds",
-    "Beds Low-High":"-beds",
-    "Baths High-Low":"baths",
-    "Baths Low-High":"-baths"
+    "Beds High-Low":"-beds",
+    "Beds Low-High":"beds",
+    "Baths High-Low":"-baths",
+    "Baths Low-High":"baths"
 }
 
 export const sortingHousingValues = Object.keys(sortingHousingExchange);
