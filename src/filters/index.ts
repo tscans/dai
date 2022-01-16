@@ -121,17 +121,17 @@ export const filtersHomeStatusValues = Object.keys(filtersHomeStatusExchange);
 export const filtersHomeStatusLookup = lookupGenerator(filtersHomeStatusValues);
 
 export interface IMlsFilters{
-    priceRangeStart:keyof typeof filtersPriceRangeValues;
-    priceRangeEnd:keyof typeof filtersPriceRangeValues;
-    bedroomRangeStart:keyof typeof filtersBedRangeValues;
-    bathroomRangeStart:keyof typeof filtersBathRangeValues;
-    propertyType:keyof typeof filtersPropertyTypeValues;
+    priceRangeStart:string;
+    priceRangeEnd:string;
+    bedroomRangeStart:string;
+    bathroomRangeStart:string;
+    propertyType:string;
     houseSqftStart:number | null;
     houseSqftEnd:number | null;
     yearBuiltStart:number | null;
     yearBuiltEnd:number | null;
-    homeStatus:keyof typeof filtersHomeStatusValues;
-    houseSort: keyof typeof sortingHousingValues;
+    homeStatus:string;
+    houseSort: string;
 }
 
 export interface IMlsFiltersSaved extends IMlsFilters{
