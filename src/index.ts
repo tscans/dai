@@ -68,6 +68,10 @@ export interface IUserSavedListing{
     createdBy:string;
 }
 
+export interface IAgentsBuyersListings extends IUserSavedListing{
+    mlsListingData:ISRListing;
+}
+
 export interface IAgentSuggestedListing{
     id:string;
     createdAt:string;
