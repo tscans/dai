@@ -18,3 +18,10 @@ export enum ENotificationType{
     agentRejectsClientConnection = "agentRejectsClientConnection",
     clientRemovesAgent = "clientRemovesAgent"
 }
+
+export interface IUserNotificationPreferences{
+    id:string;
+    userPushNotificationToken?:string;
+    createdAt:string;
+    lastUpdateAt:string;
+}
