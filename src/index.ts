@@ -34,7 +34,7 @@ export interface IUserProfile{
     id:string;
     firstName:string; 
     lastName:string;
-    createdAt: number;
+    createdAt: string;
     email:string;
     profilePictureThumbnail:string | null;
     userSavedListIds:string[];
