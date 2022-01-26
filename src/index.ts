@@ -9,6 +9,7 @@ export * from './instagram';
 export * from './srets';
 export * from './here';
 export * from './notifications';
+export * from './showings';
 
 export const AllMocks = Mocks;
 
@@ -93,4 +94,11 @@ export interface IAgentSignUpCodes{
     lastName:string;
     redeemCode:string;
     email:string;
+}
+
+export interface IMessengerItem{
+    id:string;
+    createdAt:string;
+    createdBy:string;
+
 }
