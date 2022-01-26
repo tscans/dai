@@ -27,3 +27,11 @@ export interface IAgentShowingStagingItems{
 export interface IAgentShowingStagingItemsViaMls extends IAgentShowingStagingItems{
     mlsListingData:ISRListing;
 }
+
+export interface IAgentShowingStageWithItems extends IAgentShowingStage{
+    items:IAgentShowingStagingItems[];
+}
+
+export interface IAgentShowingStageWithItemsViaMls extends IAgentShowingStage{
+    items:IAgentShowingStagingItemsViaMls[];
+}
