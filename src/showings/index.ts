@@ -1,7 +1,19 @@
 import { ISRListing } from "..";
 
+export interface IAgentShowingStage{
+    id:string;
+    createdAt:string;
+    lastEditedAt:string;
+    agentId:string;
+    clientId:string;
+    showingConfirmed:boolean;
+    showingConfirmedVisited:boolean;
+    showingTitle:string;
+}
+
 export interface IAgentShowingStagingItems{
     id:string;
+    stageId:string;
     createdAt:string;
     lastEditedAt:string;
     agentId:string;
@@ -10,7 +22,6 @@ export interface IAgentShowingStagingItems{
     showingDate:string;
     showingTime:string;
     showingTimeZone:string;
-    confirmedVisited:boolean;
 }
 
 export interface IAgentShowingStagingItemsViaMls extends IAgentShowingStagingItems{
