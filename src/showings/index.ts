@@ -19,9 +19,7 @@ export interface IAgentShowingStagingItems{
     agentId:string;
     clientId:string;
     mlsListingId:string;
-    showingDate:string;
-    showingTime:string;
-    showingTimeZone:string;
+    showingDateTime:string;
 }
 
 export interface IAgentShowingStagingItemsViaMls extends IAgentShowingStagingItems{
