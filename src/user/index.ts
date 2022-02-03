@@ -1,5 +1,6 @@
 export interface IUserHomePreferences{
     ownerId:string;
+    updatedAt:string;
     homePriceStart:number;
     homePriceEnd:number;
     location:string;
