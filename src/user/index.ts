@@ -1,13 +1,14 @@
 export interface IUserHomePreferences{
     ownerId:string;
     updatedAt:string;
-    homePriceStart:number;
-    homePriceEnd:number;
+    priceRangeStart:string;
+    priceRangeEnd:string;
     location:string;
     locationLng:number;
     locationLat:number;
-    minBeds:number;
-    minBaths:number;
-    minSqft:number;
+    bedroomRangeStart:string;
+    bathroomRangeStart:string;
+    houseSqftStart:number | null;
+    houseSqftEnd:number | null;
     additionalDescription:string;
 }
