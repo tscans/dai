@@ -16,7 +16,10 @@ export enum ENotificationType{
     clientRequestingAgentConnection = "clientRequestingAgentConnection",
     agentAcceptsClientConnection = "agentAcceptsClientConnection",
     agentRejectsClientConnection = "agentRejectsClientConnection",
-    clientRemovesAgent = "clientRemovesAgent"
+    clientRemovesAgent = "clientRemovesAgent",
+    agentRequestingClientConnection = "agentRequestingClientConnection",
+    clientAcceptsAgentConnection = "clientAcceptsAgentConnection",
+    clientRejectsAgentConnection = "clientRejectsAgentConnection"
 }
 
 export interface IUserNotificationPreferences{
