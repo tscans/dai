@@ -1,3 +1,9 @@
+export interface IRecordedSrListing{
+    mlsListingId:string;
+    mlsListingData:ISRListing;
+    updatedAt:Date;
+}
+
 export interface ISRListing {
     privateRemarks: string;
     property: ISRProperty;
