@@ -26,3 +26,7 @@ export interface IUserNotificationPreferences{
     createdAt:string;
     lastUpdateAt:string;
 }
+
+export enum EPushNotificationType{
+    newMessageSent = "newMessageSent"
+}
