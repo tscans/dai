@@ -43,7 +43,7 @@ export interface IUserProfile{
     userSavedListIds:string[];
     userType:EUserType;
     phoneNumber?:string | null;
-    assignedAgentUserId?:string | null;
+    assignedAgentUserId?:string[] | null;
     assignedAgencyId?:string | null;
     description:string;
     clientAgentConnectionStatus:EClientAgentConnectionStatus;
