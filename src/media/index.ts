@@ -397,4 +397,5 @@ export interface IMediaNews{
     summary?:string;
     recordedDateTime?:string;
     metaImgUrl?:string;
+    searchArea?:string;
 }
