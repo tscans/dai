@@ -4,8 +4,7 @@ import {filtersPriceRangeValues,filtersBedRangeValues,filtersBathRangeValues,
 import { ISRListing } from './srets';
 
 export * from './filters';
-export * from './youtube';
-export * from './instagram';
+export * from './media';
 export * from './srets';
 export * from './here';
 export * from './notifications';

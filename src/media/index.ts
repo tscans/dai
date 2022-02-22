@@ -258,8 +258,131 @@ export interface IInstagramRoot {
     bloks_app_url: any
   }
   
-  export interface IInstagramCommentInformTreatment2 {
-    should_have_inform_treatment: boolean
-    text: string
-  }
+export interface IInstagramCommentInformTreatment2 {
+should_have_inform_treatment: boolean
+text: string
+}
+
+export interface IYoutubeMediaSave {
+id:string;
+createdAt:string;
+publishedAt:string;
+title:string;
+description:string;
+thumbnailUrl:string;
+videoId:string;
+}
+
+export interface IYoutubeRoot {
+kind: string
+etag: string
+nextPageToken: string
+items: IYoutubeItem[]
+pageInfo: IYoutubePageInfo
+}
+
+export interface IYoutubeItem {
+kind: string
+etag: string
+id: string
+snippet: IYoutubeSnippet
+}
+
+export interface IYoutubeSnippet {
+publishedAt: string
+channelId: string
+title: string
+description: string
+thumbnails: IYoutubeThumbnails
+channelTitle: string
+playlistId: string
+position: number
+resourceId: IYoutubeResourceId
+videoOwnerChannelTitle: string
+videoOwnerChannelId: string
+}
+
+export interface IYoutubeThumbnails {
+default: IYoutubeDefault
+medium: IYoutubeMedium
+high: IYoutubeHigh
+standard?: IYoutubeStandard
+maxres?: IYoutubeMaxres
+}
+
+export interface IYoutubeDefault {
+url: string
+width: number
+height: number
+}
+
+export interface IYoutubeMedium {
+url: string
+width: number
+height: number
+}
+
+export interface IYoutubeHigh {
+url: string
+width: number
+height: number
+}
+
+export interface IYoutubeStandard {
+url: string
+width: number
+height: number
+}
+
+export interface IYoutubeMaxres {
+url: string
+width: number
+height: number
+}
+
+export interface IYoutubeResourceId {
+kind: string
+videoId: string
+}
+
+export interface IYoutubePageInfo {
+totalResults: number
+resultsPerPage: number
+}
+
+export interface INewsApiResponseArticles{
+    "_id":string;
+    "_score":number;
+    "author":string | null;
+    "clean_url":string;
+    "country":string;
+    "language":string;
+    "link":string;
+    "published_date":string;
+    "rank":string;
+    "rights":string;
+    "summary":string;
+    "title":string;
+    "topic":string;
+}
   
+export interface INewsApiResponseUserInput{
+    "from":string;
+    "lang":string;
+    "page":number;
+    "q":string;
+    "ranked_only":string;
+    "search_in":string;
+    "size":number;
+    "sort_by":string;
+}
+
+export interface INewsApiResponse{
+    "articles":INewsApiResponseArticles[];
+    "page":number;
+    "page_size":number;
+    "status":string;
+    "total_hits":number;
+    "total_pages":number;
+    "user_input":INewsApiResponseUserInput
+}
