@@ -386,3 +386,14 @@ export interface INewsApiResponse{
     "total_pages":number;
     "user_input":INewsApiResponseUserInput
 }
+
+export interface IMediaNews{
+    id:string;
+    author:string;
+    originUrl:string;
+    articleUrl:string;
+    publishedDate:string;
+    title:string;
+    summary:string;
+    recordedDateTime:string;
+}
