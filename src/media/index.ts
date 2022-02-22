@@ -389,6 +389,7 @@ export interface INewsApiResponse{
 
 export interface IMediaNews{
     id:string;
+    originalNewsId:string;
     author?:string;
     originUrl?:string;
     articleUrl?:string;
