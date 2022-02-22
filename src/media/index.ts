@@ -389,11 +389,12 @@ export interface INewsApiResponse{
 
 export interface IMediaNews{
     id:string;
-    author:string;
-    originUrl:string;
-    articleUrl:string;
-    publishedDate:string;
-    title:string;
-    summary:string;
-    recordedDateTime:string;
+    author?:string;
+    originUrl?:string;
+    articleUrl?:string;
+    publishedDate?:string;
+    title?:string;
+    summary?:string;
+    recordedDateTime?:string;
+    metaImgUrl?:string;
 }
