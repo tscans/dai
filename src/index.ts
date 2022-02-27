@@ -11,6 +11,7 @@ export * from './notifications';
 export * from './showings';
 export * from './messaging';
 export * from './user';
+export * from './clientNotes';
 
 export const AllMocks = Mocks;
 
