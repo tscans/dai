@@ -5,10 +5,8 @@ export interface IDynamicMessage{
     clientMessagingId:string;
     isDeleted:boolean;
     messageText:string;
-    replyContextId:string | null;
-    replyContextType:EMessageReplyTypes | null;
-    initialMessageContextId:string | null;
-    initialMessageContextType:string | null;
+    mlsListingContextId:string | null;
+    mlsImageUrl:string | null;
 }
 
 export enum EMessageReplyTypes{
