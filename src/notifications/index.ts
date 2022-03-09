@@ -12,12 +12,16 @@ export interface ICommonNotification{
 }
 
 export enum ENotificationType{
+    newMessageSent = "newMessageSent",
     clientListReorder = "clientListReorder",
     clientRequestingAgentConnection = "clientRequestingAgentConnection",
     agentAcceptsClientConnection = "agentAcceptsClientConnection",
     agentRejectsClientConnection = "agentRejectsClientConnection",
     clientRemovesAgent = "clientRemovesAgent",
-    agentRequestingClientConnection = "agentRequestingClientConnection"
+    agentRequestingClientConnection = "agentRequestingClientConnection",
+    agentRecommendsHouse = "agentRecommendsHouse",
+    clientSavesHouse = "clientSavesHouse",
+    agentLaunchesShowing = "agentLaunchesShowing"
 }
 
 export interface IUserNotificationPreferences{
@@ -25,8 +29,4 @@ export interface IUserNotificationPreferences{
     userPushNotificationToken?:string;
     createdAt:string;
     lastUpdateAt:string;
-}
-
-export enum EPushNotificationType{
-    newMessageSent = "newMessageSent"
 }
