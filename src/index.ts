@@ -69,6 +69,7 @@ export interface IUserSavedListing{
     lastUpdatedSrets:string;
     userRating: EUserSavedListingRating;
     createdBy:string;
+    initialMessage?:string;
 }
 
 export interface IAgentsBuyersListings extends IUserSavedListing{
