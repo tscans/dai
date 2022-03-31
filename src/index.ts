@@ -5,6 +5,7 @@ import { ISRListing } from './srets';
 
 export * from './filters';
 export * from './media';
+export * from './analytics';
 export * from './srets';
 export * from './here';
 export * from './notifications';
