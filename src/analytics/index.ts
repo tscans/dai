@@ -27,6 +27,7 @@ export interface IMetaLocationsStored{
     centerLocationLat:number;
     centerLocationLng:number
     coordinateBoundaries:string;
+    friendlyName:string;
     usState:string;
 }
 
@@ -36,5 +37,6 @@ export interface IMetaLocations{
     centerLocationLat:number;
     centerLocationLng:number
     coordinateBoundaries:number[][];
+    friendlyName:string;
     usState:string;
 }
