@@ -1,5 +1,7 @@
 export interface IAnalytics{
     id:string;
+    friendlyName:string;
+    updatedAt:Date;
     location:string;
     periodName:string;
     countSold:number;
@@ -17,8 +19,8 @@ export interface IAnalytics{
     medianSquareFootage:number;
     medianYearBuilt:number;
     mlsListingIdDrilldown:string[];
-    minDate:Date;
-    maxDate:Date;
+    minDate:string;
+    maxDate:string;
 }
 
 export interface IMetaLocationsStored{
