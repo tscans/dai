@@ -1,6 +1,6 @@
 export interface IAnalytics{
     id:string;
-    friendlyName:string;
+    locationId:string;
     updatedAt:Date;
     location:string;
     periodName:string;
