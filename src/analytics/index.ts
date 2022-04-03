@@ -1,5 +1,6 @@
 export interface IAnalytics{
-    city:string;
+    id:string;
+    location:string;
     periodName:string;
     countSold:number;
     salesVolume:number;
@@ -7,7 +8,7 @@ export interface IAnalytics{
     minClosedPrice:number;
     maxClosedPrice:number;
     soldOverListing:number;
-    closedAsPercentOfOriginalListPrice:number;
+    closedAsPercentofOriginalListPrice:number;
     averageSquareFt:number;
     averageClosedPrice:number;
     averagePricePerSquareFt:number;
@@ -18,4 +19,22 @@ export interface IAnalytics{
     mlsListingIdDrilldown:string[];
     minDate:Date;
     maxDate:Date;
+}
+
+export interface IMetaLocationsStored{
+    id:string;
+    locationName:string;
+    centerLocationLat:number;
+    centerLocationLng:number
+    coordinateBoundaries:string;
+    usState:string;
+}
+
+export interface IMetaLocations{
+    id:string;
+    locationName:string;
+    centerLocationLat:number;
+    centerLocationLng:number
+    coordinateBoundaries:number[][];
+    usState:string;
 }
