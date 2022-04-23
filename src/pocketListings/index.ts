@@ -1,6 +1,7 @@
 export interface IPocketListings{
     pocketListingId:string;
     posterId:string;
+    organizationId:string;
     updatedAt:Date;
     photos:string[];
     listPrice:number;
@@ -29,6 +30,7 @@ export interface IPocketListings{
 
 export interface IFlatPocketListing{
     pocketListingId:string;
+    organizationId:string;
     posterId:string;
     updatedAt:Date;
     photos:string[];
