@@ -26,3 +26,28 @@ export interface IPocketListings{
         district:string;
     }
 }
+
+export interface IFlatPocketListing{
+    pocketListingId:string;
+    posterId:string;
+    updatedAt:Date;
+    photos:string[];
+    listPrice:number;
+    streetNumber:string;
+    streetName:string;
+    city:string;
+    state:string;
+    postalCode:string;
+    longitude:number;
+    latitude:number;
+    remarks:string;
+    totalBeds:number;
+    totalBaths:number;
+    propertyArea:number;
+    residenceType:string;
+    yearBuilt:number;
+    elementarySchool:string;
+    middleSchool:string;
+    highSchool:string;
+    district:string;
+}
