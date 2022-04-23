@@ -1,0 +1,28 @@
+export interface IPocketListings{
+    pocketListingId:string;
+    posterId:string;
+    updatedAt:Date;
+    photos:string[];
+    listPrice:number;
+    address:{
+        streetNumber:string;
+        streetName:string;
+        city:string;
+        state:string;
+        postalCode:string;
+    }
+    longitude:number;
+    latitude:number;
+    remarks:string;
+    totalBeds:number;
+    totalBaths:number;
+    propertyArea:number;
+    residenceType:string;
+    yearBuilt:number;
+    school:{
+        elementarySchool:string;
+        middleSchool:string;
+        highSchool:string;
+        district:string;
+    }
+}

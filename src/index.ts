@@ -14,6 +14,7 @@ export * from './messaging';
 export * from './user';
 export * from './clientNotes';
 export * from './agentsStatic';
+export * from './pocketListings';
 
 export const AllMocks = Mocks;
 
