@@ -37,6 +37,7 @@ export interface IFlatPocketListing{
     listPrice:number;
     streetNumber:string;
     streetName:string;
+    secondaryAddress:string;
     city:string;
     state:string;
     postalCode:string;
