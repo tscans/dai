@@ -12,3 +12,11 @@ export interface IUserHomePreferences{
     houseSqftEnd:number | null;
     additionalDescription:string;
 }
+
+export interface IUserAssignedAgents{
+    id:string;
+    clientId:string;
+    createdAt:Date;
+    agentId:string;
+    agencyId:string;
+}

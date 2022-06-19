@@ -15,6 +15,7 @@ export * from './user';
 export * from './clientNotes';
 export * from './agentsStatic';
 export * from './pocketListings';
+export * from './savedListings';
 
 export const AllMocks = Mocks;
 
@@ -43,40 +44,15 @@ export interface IUserProfile{
     createdAt: string;
     email:string;
     profilePictureThumbnail:string | null;
-    userSavedListIds:string[];
+    //userSavedListIds:string[];
     userType:EUserType;
     phoneNumber?:string | null;
-    assignedAgentUserId?:string[] | null;
-    assignedAgencyId?:string | null;
+    //assignedAgentUserId?:string[] | null;
+    //assignedAgencyId?:string | null;
     description:string;
-    clientAgentConnectionStatus:EClientAgentConnectionStatus;
+    //clientAgentConnectionStatus:EClientAgentConnectionStatus;
     tagline?:string;
     userPrimaryZipCode?:string;
-    preferredPriceRangeStart?:keyof typeof filtersPriceRangeValues;
-    preferredPriceRangeEnd?:keyof typeof filtersPriceRangeValues;
-    preferredBedroomRangeStart?:keyof typeof filtersBedRangeValues;
-    preferredBathroomRangeStart?:keyof typeof filtersBathRangeValues;
-    preferredBuyingUrgency?:keyof typeof filtersPreferenceBuyingUrgencyValues
-}
-
-export enum EUserSavedListingRating{
-    like = "Like",
-    love = "Love"
-}
-
-export interface IUserSavedListing{
-    id:string;
-    createdAt:string;
-    mlsListingId:string;
-    savedVersion: string;
-    lastUpdatedSrets:string;
-    userRating: EUserSavedListingRating;
-    createdBy:string;
-    initialMessage?:string;
-}
-
-export interface IAgentsBuyersListings extends IUserSavedListing{
-    mlsListingData:ISRListing;
 }
 
 export interface IAgentSuggestedListing{
