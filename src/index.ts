@@ -48,7 +48,7 @@ export interface IUserProfile{
     userType:EUserType;
     phoneNumber?:string | null;
     //assignedAgentUserId?:string[] | null;
-    //assignedAgencyId?:string | null;
+    assignedAgencyId?:string | null;
     description:string;
     //clientAgentConnectionStatus:EClientAgentConnectionStatus;
     tagline?:string;
