@@ -1,5 +1,6 @@
 export interface IRecordedSrListing{
     mlsListingId:string;
+    mlsId:string;
     mlsListingData:ISRListing;
     updatedAt:Date;
 }

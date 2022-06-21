@@ -18,6 +18,5 @@ export interface IClientNotes{
     notes?:string;
     clientType:EClientType;
     clientTemperature: EClientTemperature;
-    assignedAgentUserId?:string[] | null;
     assignedAgencyId?:string | null;
 }
