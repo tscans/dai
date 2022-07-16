@@ -1,3 +1,5 @@
+//All Deprecated
+
 export interface IAnalytics{
     id:string;
     locationId:string;

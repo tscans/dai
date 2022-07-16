@@ -1,3 +1,4 @@
+//recorded is deprecated
 export interface IRecordedSrListing{
     mlsListingId:string;
     mlsListingData:ISRListing;

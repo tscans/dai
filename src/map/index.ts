@@ -1,0 +1,90 @@
+//location
+//every month
+//residential and rent
+//closed vs active
+
+import { ISRListing } from "../srets";
+
+export enum EAreaType{
+    city = "city",
+    neighborhood = "neighborhood"
+}
+
+export interface IMapLocation{
+    id:string;
+    updatedAt?:Date;
+    locationName:string;
+    centerLocationLat:number;
+    centerLocationLng:number
+    coordinateBoundaries:number[][];
+    smallerCoordinates:number[][];
+    usState:string;
+}
+
+export interface IMetricSplitsNumeric{
+    entityCount:number;
+    average:number;
+    median:number;
+    p10:number;
+    p25:number;
+    p75:number;
+    p90:number;
+    min:number;
+    max:number;
+}
+
+export interface IMetricSplitsString{
+    median:string;
+    p10:string;
+    p25:string;
+    p75:string;
+    p90:string;
+    min:string;
+    max:string;
+}
+
+export interface IMetricSplits{
+    values:IMetricSplitsNumeric;
+    mlsListingIdPointers:IMetricSplitsString;
+}
+
+export interface IMetric{
+    id: string;
+    locationId: string;
+    dateId:number;
+    updatedAt: Date;
+    totalClosedHomes:number;
+    totalActiveHomes:number;
+    totalNewlyActiveHomes:number;
+    totalSalesVolume:number;
+    totalPotentialSalesVolume:number;
+
+    homesDaysOnMarket?:IMetricSplits | null;
+    listingPrice?:IMetricSplits | null;
+    closingPrice?:IMetricSplits | null;
+    totalHomesSoldOverListingPrice:number;
+    closePriceAsPercentOfListPrice?:IMetricSplits | null;
+    squareFt?:IMetricSplits | null;
+    
+    medianYearBuilt?: number | null;
+    mlsListingIdDrilldown: string[];
+
+}
+
+export interface IGeneratedMetrics{
+    [locationId:string]:IMetric[];
+}
+
+export interface ILocationListingsObject {[locationId:string]: ISRListing[]}
+
+export interface IMapListing {
+    mlsListingId:string;
+    closePrice?:number | null;
+    closeDate?:Date | null;
+    listPrice?:number | null;
+    longitude?:number | null;
+    latitude?:number | null;
+    retsJson:ISRListing;
+    updatedAt:Date;
+    locationId:string;
+}

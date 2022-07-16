@@ -1,6 +1,4 @@
 import Mocks from './mocks/index';
-import {filtersPriceRangeValues,filtersBedRangeValues,filtersBathRangeValues,
-    filtersPreferenceBuyingUrgencyValues} from './filters';
 import { ISRListing } from './srets';
 
 export * from './filters';
@@ -13,9 +11,10 @@ export * from './showings';
 export * from './messaging';
 export * from './user';
 export * from './clientNotes';
-export * from './agentsStatic';
+export * from './agentDetails';
 export * from './pocketListings';
 export * from './savedListings';
+export * from './map';
 
 export const AllMocks = Mocks;
 

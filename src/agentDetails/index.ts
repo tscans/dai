@@ -1,4 +1,4 @@
-export interface IAgentsStatic{
+export interface IAgentsDetails{
     id:string;
     createdAt:Date;
     firstName:string;
@@ -7,4 +7,6 @@ export interface IAgentsStatic{
     agentArea:string;
     agentInfo:string;
     imageUrl:string;
+    locationIds?:string[];
+    profileId?:string;
 }
