@@ -4,6 +4,7 @@
 //closed vs active
 
 import { ISRListing } from "../srets";
+import {first,last} from 'underscore';
 
 export enum EAreaType{
     city = "city",
@@ -87,4 +88,25 @@ export interface IMapListing {
     retsJson:ISRListing;
     updatedAt:Date;
     locationId:string;
+}
+
+export const mlsListingIdBreakPointCharacter = "|";
+
+export const getMlsListingId = (mlsId:string,listingId:string) =>{
+    return `${mlsId}${mlsListingIdBreakPointCharacter}${listingId}`;
+}
+
+export const getMlsListingIdFromListing = (listing:ISRListing) =>{
+    let mlsName = listing.mls.originatingSystemName;
+    if(mlsName.toUpperCase().includes("NAPLES")){
+        mlsName = 'swfla';
+    }
+    return `${mlsName.toUpperCase()}${mlsListingIdBreakPointCharacter}${listing.listingId}`;
+}
+
+export const stripMlsListingId = (mlsListingId:string) =>{
+    const split = mlsListingId.split(mlsListingIdBreakPointCharacter);
+    const mlsId = first(split);
+    const listingId = last(split);
+    return {mlsId,listingId};
 }
