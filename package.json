@@ -1,6 +1,6 @@
 {
   "name": "dawn-interfaces",
-  "version": "1.0.107",
+  "version": "1.0.108",
   "description": "Dawn application interfaces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "test": "",
     "prepublish": "npm test",
     "go": "node ./nodeEditor.js && tsc && git add . && git commit -m 'update' && npm publish",
-    "go-platform": "npm run go && cd .. && cd app && yarn add dawn-interfaces && cd .. && cd service && npm i dawn-interfaces && cd .. && cd dawn-web && npm i dawn-interfaces && cd .. && cd gwi"
+    "go-platform": "npm run go && cd .. && cd dawn-app && yarn add dawn-interfaces && cd .. && cd dawn-service && npm i dawn-interfaces && cd .. && cd dawn-web && npm i dawn-interfaces && cd .. && cd dai"
   },
   "keywords": [ "dawn" ],
   "author": "Tom Scanlan",
