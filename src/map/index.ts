@@ -66,10 +66,10 @@ export interface IMetric{
     totalHomesSoldOverListingPrice:number;
     closePriceAsPercentOfListPrice?:IMetricSplits | null;
     squareFt?:IMetricSplits | null;
+    pricePerSquareFt?: IMetricSplits | null;
     
     medianYearBuilt?: number | null;
     mlsListingIdDrilldown: string[];
-
 }
 
 export interface IGeneratedMetrics{
@@ -77,6 +77,21 @@ export interface IGeneratedMetrics{
 }
 
 export interface ILocationListingsObject {[locationId:string]: ISRListing[]}
+
+export enum EHomeStatus{
+    closed = "Closed",
+    pending = "Pending",
+    activeUnderContract = "ActiveUnderContract",
+    active = "Active",
+}
+
+export enum EHomeType{
+    residential = "RES",
+    rental = "RNT",
+    land = "LND",
+    multifamily = "MLF",
+    commercial = "CRE",
+}
 
 export interface IMapListing {
     mlsListingId:string;
@@ -88,6 +103,8 @@ export interface IMapListing {
     retsJson:ISRListing;
     updatedAt:Date;
     locationId:string;
+    homeType?: EHomeType | null;
+    homeStatus?: EHomeStatus | null;
 }
 
 export const mlsListingIdBreakPointCharacter = "|";
