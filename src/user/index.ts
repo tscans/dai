@@ -3,13 +3,11 @@ export interface IUserHomePreferences{
     updatedAt:string;
     priceRangeStart:string;
     priceRangeEnd:string;
-    location:string;
-    locationLng:number;
-    locationLat:number;
+    locationIds:string[];
     bedroomRangeStart:string;
     bathroomRangeStart:string;
-    houseSqftStart:number | null;
-    houseSqftEnd:number | null;
+    houseSqftStart:number;
+    houseSqftEnd:number;
     additionalDescription:string;
 }
 
