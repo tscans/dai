@@ -9,7 +9,6 @@ export interface IUserSavedListing{
     id:string;
     createdAt:string;
     mlsListingId:string;
-    rankingIndex:number;
     savedVersion: string;
     lastUpdatedSrets:string;
     userRating: EUserSavedListingRating;
