@@ -2,34 +2,42 @@ import { ISRListing } from "..";
 
 export interface IAgentShowingStage{
     id:string;
-    createdAt:string;
-    lastEditedAt:string;
+    createdAt:Date;
+    lastEditedAt:Date;
     agentId:string;
     clientId:string;
-    showingConfirmed:boolean;
-    showingConfirmedVisited:boolean;
     showingTitle:string;
 }
 
-export interface IAgentShowingStagingItems{
+export interface IAgentShowingItems{
     id:string;
     stageId:string;
-    createdAt:string;
-    lastEditedAt:string;
+    createdAt:Date;
+    lastEditedAt:Date;
     agentId:string;
     clientId:string;
     mlsListingId:string;
     showingDateTime:Date | null;
 }
 
-export interface IAgentShowingStagingItemsViaMls extends IAgentShowingStagingItems{
+export interface IAgentShowingStagingItemsViaMls extends IAgentShowingItems{
     mlsListingData:ISRListing;
 }
 
 export interface IAgentShowingStageWithItems extends IAgentShowingStage{
-    items:IAgentShowingStagingItems[];
+    items:IAgentShowingItems[];
 }
 
 export interface IAgentShowingStageWithItemsViaMls extends IAgentShowingStage{
     items:IAgentShowingStagingItemsViaMls[];
+}
+
+export interface IShowing{
+    id:string;
+    createdAt:Date;
+    lastEditedAt:Date;
+    agentId:string;
+    clientId:string;
+    showingHasConcluded:boolean;
+    showingTitle:string;
 }
