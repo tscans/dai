@@ -45,6 +45,6 @@ export interface IShowing{
     showingTitle:string;
 }
 
-export interface IShowingWithItemsViaMls{
+export interface IShowingWithItemsViaMls extends IShowing{
     items: IShowingItemsViaMls[];
 }
