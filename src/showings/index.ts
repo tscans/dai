@@ -28,6 +28,9 @@ export interface IAgentShowingStageWithItems extends IAgentShowingStage{
     items:IAgentShowingItems[];
 }
 
+export interface IShowingItemsViaMls extends IAgentShowingItems{
+    mlsListingData:ISRListing;
+}
 export interface IAgentShowingStageWithItemsViaMls extends IAgentShowingStage{
     items:IAgentShowingStagingItemsViaMls[];
 }
@@ -40,4 +43,8 @@ export interface IShowing{
     clientId:string;
     showingHasConcluded:boolean;
     showingTitle:string;
+}
+
+export interface IShowingWithItemsViaMls{
+    items: IShowingItemsViaMls[];
 }
