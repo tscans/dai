@@ -114,7 +114,7 @@ export const getMlsListingId = (mlsId:string,listingId:string) =>{
 }
 
 export const getMlsListingIdFromListing = (listing:ISRListing) =>{
-    let mlsName = listing.mls.originatingSystemName;
+    let mlsName = listing?.mls?.originatingSystemName || '';
     if(mlsName.toUpperCase().includes("NAPLES")){
         mlsName = 'swfla';
     }
