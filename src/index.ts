@@ -15,6 +15,7 @@ export * from './agentDetails';
 export * from './pocketListings';
 export * from './savedListings';
 export * from './map';
+export * from './hotHomes';
 
 export const AllMocks = Mocks;
 
