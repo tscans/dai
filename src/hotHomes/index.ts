@@ -6,4 +6,5 @@ export interface IHotHome{
     longitude:number;
     latitude:number;
     marketListingDate:Date;
+    description: string;
 }
