@@ -16,7 +16,7 @@ export * from './pocketListings';
 export * from './savedListings';
 export * from './map';
 export * from './hotHomes';
-export * from './countyGlide';
+export * from './countyPlot';
 
 export const AllMocks = Mocks;
 

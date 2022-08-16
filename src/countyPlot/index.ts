@@ -1,4 +1,4 @@
-export interface ICountyGlide{
+export interface ICountyPlot{
     id:string;
     longitude?:number;
     latitude?:number;
