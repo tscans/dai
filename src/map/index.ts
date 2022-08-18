@@ -69,7 +69,9 @@ export interface IMetric{
     pricePerSquareFt?: IMetricSplits | null;
     
     medianYearBuilt?: number | null;
-    mlsListingIdDrilldown: string[];
+    newlyActiveListingDrilldown: string[];
+    activeListingDrilldown: string[];
+    closedListingDrilldown: string[];
 }
 
 export interface IGeneratedMetrics{
@@ -105,6 +107,8 @@ export interface IMapListing {
     locationId:string;
     homeType?: EHomeType | null;
     homeStatus?: EHomeStatus | null;
+    agentId?:string | null;
+    agencyId?:string | null;
 }
 
 export const mlsListingIdBreakPointCharacter = "|";
