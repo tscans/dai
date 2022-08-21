@@ -49,7 +49,7 @@ export interface IShowingWithItemsViaMls extends IShowing{
     items: IShowingItemsViaMls[];
 }
 
-export interface IShowingNotes {
+export interface IShowingNote {
     id:string;
     createdAt:Date;
     showingId:string;
