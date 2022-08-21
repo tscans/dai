@@ -48,3 +48,11 @@ export interface IShowing{
 export interface IShowingWithItemsViaMls extends IShowing{
     items: IShowingItemsViaMls[];
 }
+
+export interface IShowingNotes {
+    id:string;
+    createdAt:Date;
+    showingId:string;
+    description:string;
+    imageUrl?:string;
+}
