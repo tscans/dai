@@ -55,4 +55,5 @@ export interface IShowingNote {
     showingId:string;
     description:string;
     imageUrl?:string;
+    imageUrlKey?:string;
 }
