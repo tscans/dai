@@ -53,6 +53,8 @@ export interface IShowingNote {
     id:string;
     createdAt:Date;
     showingId:string;
+    showingItemId:string;
+    mlsListingId:string;
     description:string;
     imageUrl?:string;
     imageUrlKey?:string;
