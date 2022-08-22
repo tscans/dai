@@ -52,6 +52,7 @@ export interface IShowingWithItemsViaMls extends IShowing{
 export interface IShowingNote {
     id:string;
     createdAt:Date;
+    creatorId:string;
     showingId:string;
     showingItemId:string;
     mlsListingId:string;
