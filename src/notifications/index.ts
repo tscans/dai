@@ -9,6 +9,7 @@ export interface ICommonNotification{
     customNotificationImageUrl:string | null | undefined;
     notificationSentById:string;
     notificationActivityHasBeenUsed:boolean;
+    notificationContextId?:string;
 }
 
 export enum ENotificationType{
