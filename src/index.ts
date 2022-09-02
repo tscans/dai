@@ -17,6 +17,7 @@ export * from './savedListings';
 export * from './map';
 export * from './hotHomes';
 export * from './countyPlot';
+export * from './selling';
 
 export const AllMocks = Mocks;
 
