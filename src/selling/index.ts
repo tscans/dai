@@ -6,6 +6,7 @@ export enum ESellerTaskCategory{
     homeExit = 'Home Exit Planning',
     closingTasks = 'Closing Tasks',
     miscellaneous = 'Miscellaneous',
+    additionalTodo = 'Additional Todo',
 }
 
 export enum ESellerTaskOwnerType{
