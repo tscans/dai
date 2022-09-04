@@ -5,7 +5,6 @@ export interface ISellerContainer{
     createdById:string;
     sellerId:string;
     updatedAt:Date;
-    isCompleted:boolean;
 }
 
 export enum ESellerTaskCategory{
