@@ -1,3 +1,13 @@
+export interface ISellerContainer{
+    id:string;
+    createdAt:Date;
+    taskIds:string[];
+    createdById:string;
+    sellerId:string;
+    updatedAt:Date;
+    isCompleted:boolean;
+}
+
 export enum ESellerTaskCategory{
     initialTasks = 'Initial Tasks',
     homePrep = 'Prepare Your Property',
