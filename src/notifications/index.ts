@@ -10,6 +10,7 @@ export interface ICommonNotification{
     notificationSentById:string;
     notificationActivityHasBeenUsed:boolean;
     notificationContextId?:string;
+    notificationSecondaryContextId?:string;
 }
 
 export enum ENotificationType{
@@ -22,7 +23,10 @@ export enum ENotificationType{
     agentRequestingClientConnection = "agentRequestingClientConnection",
     agentRecommendsHouse = "agentRecommendsHouse",
     clientSavesHouse = "clientSavesHouse",
-    agentLaunchesShowing = "agentLaunchesShowing"
+    agentLaunchesShowing = "agentLaunchesShowing",
+    agentLaunchesSelling = "agentLaunchesSelling",
+    agentCompletesTask = "agentCompletesTask",
+    clientCompletesTask = "clientCompletesTask",
 }
 
 export interface IUserNotificationPreferences{
