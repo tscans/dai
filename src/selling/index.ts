@@ -8,6 +8,7 @@ export interface ISellerContainer{
 }
 
 export enum ESellerTaskCategory{
+    registration = 'Registration',
     initialTasks = 'Initial Tasks',
     homePrep = 'Prepare Your Property',
     homeMarketing = 'Home Marketing',
@@ -185,32 +186,26 @@ export const commonSellerTasks : ICommonSellerTask[] = [
     },
     {
         id:"24",
-        title:'Coordinate closing date time location',
-        category:ESellerTaskCategory.contractTasks,
+        title:'Agent coordinate closing date time location',
+        category:ESellerTaskCategory.closingTasks,
         taskOwnerType: ESellerTaskOwnerType.agent,
     },
     {
         id:"25",
-        title:'Agent coordinate closing date time location',
-        category:ESellerTaskCategory.contractTasks,
-        taskOwnerType: ESellerTaskOwnerType.agent,
-    },
-    {
-        id:"26",
         title:'Client coordinate closing date time location',
-        category:ESellerTaskCategory.contractTasks,
+        category:ESellerTaskCategory.closingTasks,
         taskOwnerType: ESellerTaskOwnerType.client,
     },
     {
-        id:"27",
+        id:"26",
         title:'Review closing statement',
-        category:ESellerTaskCategory.contractTasks,
+        category:ESellerTaskCategory.closingTasks,
         taskOwnerType: ESellerTaskOwnerType.agent,
     },
     {
-        id:"28",
+        id:"27",
         title:'Close the sale',
-        category:ESellerTaskCategory.contractTasks,
+        category:ESellerTaskCategory.closingTasks,
         taskOwnerType: ESellerTaskOwnerType.client,
     },
 
