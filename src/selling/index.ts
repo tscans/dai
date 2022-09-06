@@ -7,6 +7,41 @@ export interface ISellerContainer{
     updatedAt:Date;
 }
 
+export enum ESellerRegistrationSellTimeOptions{
+    within3Days = "Within 3 days",
+    within1Week = "Within 1 week",
+    within1Month = "Within 1 month",
+    within2Months = "Within 2 months",
+    moreThan2Months = "In more than 2 months",
+    notSure = "I'm not sure",
+}
+
+export enum ESellerReasonOptions{
+    upgradingHome = "Upgrading my home",
+    sellingSecondHome = "Selling second home",
+    relocating = "Relocating",
+    downsizing = "Downsizing my home",
+    retiring = "Retiring",
+    other = "Other",
+}
+
+export interface ISellerRegistration{
+    containerId:string;
+    createdAt:Date;
+    label: string;
+    longitude: number;
+    latitude:number;
+    sellingTime:ESellerRegistrationSellTimeOptions;
+    sellingReason:ESellerReasonOptions;
+    address: string;
+    sqft: number;
+    lotSize: number;
+    yearBuilt: number;
+    bedrooms: number;
+    fullBaths: number;
+    halfBaths: number;
+}
+
 export enum ESellerTaskCategory{
     registration = 'Registration',
     initialTasks = 'Initial Tasks',
