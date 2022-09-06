@@ -28,7 +28,6 @@ export enum ESellerReasonOptions{
 export interface ISellerRegistration{
     containerId:string;
     createdAt:Date;
-    label: string;
     longitude: number;
     latitude:number;
     sellingTime:ESellerRegistrationSellTimeOptions;
